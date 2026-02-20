@@ -1,0 +1,133 @@
+/* App.css */
+.app-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Занимаем всю высоту окна */
+    width: 100vw; /* Занимаем всю ширину окна */
+    overflow: hidden; /* Убираем скролл у контейнера */
+}
+
+.app-navigator {
+    flex-shrink: 0; /* Навигатор не сжимается */
+    z-index: 1000; /* Чтобы был поверх контента если нужно */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Основной контент будет занимать всё оставшееся пространство */
+.app-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden; /* Убираем скролл у контейнера */
+}
+
+
+.edit-popup{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.edit-popup-label {
+    color: rgba(117,117,117,0.87);
+    font-size: 12px;
+    cursor: default;
+    align-self: normal;
+    padding-right: 15px;
+    float: left;
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  .edit-popup-label {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.edit-popup-content {
+    height: 90%;
+    width: 90%;
+}
+
+.edit-popup-buttons {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.edit-popup-buttons .dx-button:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.custom-boolean-column .dx-checkbox-checked .dx-checkbox-icon {
+    background-color: green !important;
+    border-color: green !important;
+}
+
+
+
+/* Стили для TabPanel чтобы занимал всю высоту */
+/* .dx-tabpanel {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+} */
+
+/* Контейнер вкладок */
+/* .dx-tabpanel .dx-tabs {
+    flex-shrink: 0 !important; 
+} */
+
+/* Контейнер содержимого вкладок */
+/* .dx-tabpanel .dx-multiview-wrapper {
+    flex: 1 !important; 
+    min-height: 0 !important; 
+} */
+
+/* Само содержимое вкладки */
+/* .dx-multiview-item {
+    height: 100% !important;
+    overflow: hidden !important;
+} */
+
+/* .dx-multiview-item-container {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+} */
+
+
+.accounting-page-cont {
+    display: flex; 
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.app-panel-style {
+    display: flex; 
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+
+.h-box {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.v-box {
+    display: flex;
+    flex-direction: column;
+}

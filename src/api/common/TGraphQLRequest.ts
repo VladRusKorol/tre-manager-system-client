@@ -1,0 +1,1 @@
+export type TGraphQLRequest<T> = Promise<T|undefined>

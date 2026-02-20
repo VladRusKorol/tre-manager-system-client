@@ -1,0 +1,7 @@
+.administration-page-cont {
+    height: 100%;
+    width: 100%;
+    padding: 0; /* Убираем отступы если есть */
+    margin: 0; /* Убираем маргины если есть */
+    display: flex; /* Используем flex для TabPanel */
+}
