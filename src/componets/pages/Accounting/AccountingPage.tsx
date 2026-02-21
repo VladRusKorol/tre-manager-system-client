@@ -23,9 +23,9 @@ export const AccountingPage: React.FC = () => {
                     <DashboardPage />
                 </div>
             </Item> 
-            <Item title="АНАЛИЗ ХОДИМОСТИ МОДЕЛЕЙ">
-                {/* <TirePage /> */}
-            </Item> 
+            {/* <Item title="АНАЛИЗ ХОДИМОСТИ МОДЕЛЕЙ">
+              <TirePage />
+            </Item>  */}
         </TabPanel>
     </div>
 }

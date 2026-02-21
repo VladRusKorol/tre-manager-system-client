@@ -42,7 +42,7 @@ export const StatusTransMastetDetailGrid: React.FC<IProps>  = ({
             rowAlternationEnabled={true}
             showColumnHeaders={true}
             wordWrapEnabled={true}
-            height={200}
+            // height={200}
             onCellPrepared={ async (e: CellPreparedEvent<ITireStatusTrans, number>) =>{
                 console.log(e)
                 e.cellElement.style.fontSize = "12px"
@@ -120,7 +120,7 @@ export const StatusTransMastetDetailGrid: React.FC<IProps>  = ({
                 caption="Начало (метка времени)"
                 dataType="datetime"
                 sortIndex={0}
-                sortOrder={"asc"}
+                sortOrder={"desc"}
                 width={160}
             >
                 <Format type="shortDateShortTime" />

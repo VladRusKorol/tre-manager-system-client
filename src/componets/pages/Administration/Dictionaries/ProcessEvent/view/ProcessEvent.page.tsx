@@ -23,7 +23,7 @@ export const ProcessEventPage: React.FC = () => {
 
     const {onFormPopupShownCallback, onTitleRenderCallback } = useCustomRenderHeaderPopup( { eventDataGridRef })
     
-    return<div className="v-box">
+    return<>
         <ProcessEventGrid 
             dataSource={dataSource} 
             dgRef={dgRef} 
@@ -34,5 +34,5 @@ export const ProcessEventPage: React.FC = () => {
             onTitleRenderCallback={onTitleRenderCallback} 
             onFormPopupShownCallback={onFormPopupShownCallback}        
         />
-    </div>
+    </>
 }

@@ -36,7 +36,7 @@ export const TirePage: React.FC = () => {
     const {onFormPopupShownCallback, onTitleRenderCallback } = useCustomRenderHeaderPopup( { eventDataGridRef })
 
     
-    return <div className="v-box">
+    return<>
         <TireGrid 
             dataSource={dataSource}
             dgRef={dgRef}
@@ -58,5 +58,5 @@ export const TirePage: React.FC = () => {
             tireModelLookup={tireModelLookup} 
             tireKey={updateKey}            
         />
-    </div>
+    </>
 }

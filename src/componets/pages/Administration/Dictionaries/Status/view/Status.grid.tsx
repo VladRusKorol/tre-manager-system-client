@@ -78,6 +78,8 @@ export const StatusGrid: React.FC<IProps>  = React.memo(({
 
     return<>
         <DataGrid<IStatus,number>
+            width={"100%"}
+            height={"100%"}
             ref={dgRef}
             key={"idStatus"}
             dataSource={dataSource}    

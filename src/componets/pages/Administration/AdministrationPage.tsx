@@ -20,99 +20,100 @@ import { TirePage } from "./Dictionaries/Tire/view/Tire.page";
 
 export const AdministrationPage: React.FC = () => {
 
-    
-
     return (
         <div className="administration-page-cont">
-            <TabPanel width="100%" height="100%" focusStateEnabled={false} animationEnabled={true} >
-
+            <TabPanel className="app-panel-style" focusStateEnabled={false} animationEnabled={true} >
                 <Item title="КГШ">
-                    <TirePage />
+                    <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                        <TirePage />
+                    </div>
                 </Item>
-
                 <Item title="СПРАВОЧНИКИ ДЛЯ УЧЕТА КГШ">
-                    <TabPanel width="100%" height="100%" focusStateEnabled={false} animationEnabled={true}>
-                        
+                    <TabPanel className="app-panel-style" focusStateEnabled={false} animationEnabled={true}>
                         <Item title="СОБЫТИЯ">
-                            <ProcessEventPage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <ProcessEventPage />
+                            </div>
                         </Item>
-
                         <Item title="СТАТУСЫ">
-                            <StatusPage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <StatusPage />
+                            </div>
                         </Item>
-
                         <Item title="ЛОКАЦИИ">
-                            <LocationsPage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <LocationsPage />
+                            </div>
                         </Item>
-                    </TabPanel>
-                   
+                    </TabPanel>       
                 </Item>
-
                 <Item title="СПРАВОЧНИКИ АВТОШИН">
-                    <TabPanel width="100%" height="100%" focusStateEnabled={false} animationEnabled={true}>
+                    <TabPanel className="app-panel-style" focusStateEnabled={false} animationEnabled={true}>
                         <Item title="КАРКАСЫ">
-                            <TireCarcasTypePage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <TireCarcasTypePage />
+                            </div>
                         </Item>
                         <Item title="СЕЗОННОСТЬ">
-                            <TireSeasonalityTypePage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <TireSeasonalityTypePage />
+                            </div>
                         </Item>
                         <Item title="ПРОИЗВОДИТЕЛИ">
-                            <TireBrandPage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <TireBrandPage />
+                            </div>
                         </Item>
                          <Item title="МОДЕЛИ">
-                            <TireModelPage/>
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <TireModelPage/>
+                            </div>
                         </Item> 
                         <Item title="РАЗМЕРЫ">
-                            <TireSizePage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <TireSizePage />
+                            </div>
                         </Item>
                     </TabPanel>
-                </Item>
-
-                
+                </Item>             
                 <Item title={"СПРАВОЧНИКИ АВТОПАРКА"}>
-
-                    <TabPanel width="100%" height="100%" focusStateEnabled={false} animationEnabled={true}>
-
+                    <TabPanel className="app-panel-style" focusStateEnabled={false} animationEnabled={true}>
                         <Item title="ТРАНСПОРТ">
-                            <EquipmentsPage />
+                             <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <EquipmentsPage />
+                            </div>
                         </Item>
-
                         <Item title="ТИПЫ ТРАНСПОРТА">
-                            <EquipmentTypesPage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <EquipmentTypesPage />
+                            </div>
                         </Item>
-
                         <Item title="МОДЕЛИ ТРАНСПОРТА">
-                            <EquipmentModelPage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <EquipmentModelPage />
+                            </div>
                         </Item>
-
                         <Item title = "КОЛЕСНАЯ СХЕМА">
-                            <WheelSchemaPage />
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <WheelSchemaPage />
+                            </div>
                         </Item>
-                        
                     </TabPanel>
-                    
                 </Item>
-
                 <Item title={"СПРАВОЧНИКИ СООРУЖЕНИЙ"}> 
-
-                    <TabPanel width="100%" height="100%" focusStateEnabled={false} animationEnabled={true}>
-
+                    <TabPanel className="app-panel-style" focusStateEnabled={false} animationEnabled={true}>
                         <Item title={"ЗДАНИЯ"}>
-                            
-                            <BuildingPage />
-
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <BuildingPage />
+                            </div>
                         </Item>
-
                         <Item title="ТИПЫ ЗДАНИЙ">
-
-                            <BuildingTypePage />
-                        
+                            <div className="v-box" style={{ width:"100%", height: "100%", overflow: "hidden" }}>
+                                <BuildingTypePage />
+                            </div>
                         </Item>
-
                     </TabPanel>
-
                 </Item>
-
             </TabPanel>
         </div>
     );

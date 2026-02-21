@@ -35,6 +35,8 @@ export const ProcessEventGrid: React.FC<IProps> = React.memo(({
 }) => {
     return<>
         <DataGrid<IProcessEvent,number>
+            width={"100%"}
+            height={"100%"}
             ref={dgRef}
             key={"idProcessEvent"}
             dataSource={dataSource}    

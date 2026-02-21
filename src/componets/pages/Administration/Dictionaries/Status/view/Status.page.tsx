@@ -21,7 +21,7 @@ export const StatusPage: React.FC = () => {
 
     const {onFormPopupShownCallback, onTitleRenderCallback } = useCustomRenderHeaderPopup( { eventDataGridRef })
 
-    return<div className="v-box">
+    return<>
         <StatusGrid 
             dataSource={dataSource} 
             dgRef={dgRef} 
@@ -32,5 +32,5 @@ export const StatusPage: React.FC = () => {
             onTitleRenderCallback={onTitleRenderCallback} 
             onFormPopupShownCallback={onFormPopupShownCallback}        
         />
-    </div>
+    </>
 }

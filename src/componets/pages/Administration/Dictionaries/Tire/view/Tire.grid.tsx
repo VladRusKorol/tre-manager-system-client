@@ -38,6 +38,8 @@ export const TireGrid: React.FC<IProps> = React.memo(({
 })=>{
     return<>
         <DataGrid<ITire,number>
+            width={"100%"}
+            height={"100%"}
             ref={dgRef}
             key={"idTireModel"}
             dataSource={dataSource}    
